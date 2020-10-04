@@ -13,7 +13,7 @@ const Register = () => {
   
     // 
       useEffect(() => {
-        fetch('http://localhost:5000/allEvents')
+        fetch('https://damp-springs-43419.herokuapp.com/allEvents')
         .then(res => res.json())
         .then(data => setAllTasks(data))
       },[])
@@ -30,7 +30,7 @@ const Register = () => {
       
       const tastsInfo = {...loggedInUser, form:data, ...selectedTask};
       
-      fetch('http://localhost:5000/addTasks', {
+      fetch('https://damp-springs-43419.herokuapp.com/addTasks', {
           method: 'POST',
           headers: { 
               'Content-Type': 'application/json'

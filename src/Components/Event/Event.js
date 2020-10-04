@@ -6,7 +6,7 @@ const Event = () => {
     const [eventTask,setEventTask] = useState([]);
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     useEffect(() => {
-        fetch('http://localhost:5000/event?email='+loggedInUser.email)
+        fetch('https://damp-springs-43419.herokuapp.com/event?email='+loggedInUser.email)
         .then(res => res.json())
         .then(data => {
             setEventTask(data);
@@ -14,7 +14,7 @@ const Event = () => {
     },[])
     const [isDeleted, setIsDeleted] = useState(false)
     const handleDelete = (event, id) => {
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://damp-springs-43419.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
         .then(res => res.json())

@@ -6,7 +6,7 @@ import brandLogo from '../../logos/Group 1329.png'
 const Tasks = () => {
     const [allTasks, setAllTasks] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/allEvents')
+        fetch('https://damp-springs-43419.herokuapp.com/allEvents')
         .then(res => res.json())
         .then(data => setAllTasks(data))
     },[])

@@ -1,5 +1,4 @@
 import React from 'react';
-import fakeData from '../../fakeData';
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
 const AddEvent = () => {
@@ -8,7 +7,7 @@ const AddEvent = () => {
     const history = useHistory();
 
     const onSubmit = data => {
-        fetch('http://localhost:5000/addEvent', {
+        fetch('https://damp-springs-43419.herokuapp.com/addEvent', {
             method: 'POST',
             headers: { 
                 'Content-Type': 'application/json'
