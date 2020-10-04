@@ -1,0 +1,14 @@
+.google{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.google img{
+    height: 25px;
+
+}
+.login-body {
+    border: 1px solid black;
+    border-radius: 5px;
+}
