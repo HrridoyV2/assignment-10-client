@@ -12,14 +12,13 @@
     "bootstrap": "^4.5.2",
     "date-fns": "^2.16.1",
     "firebase": "^7.22.0",
-    "mdbreact": "^4.27.0",
     "react": "^16.13.1",
     "react-bootstrap-date-picker": "^5.1.0",
     "react-dom": "^16.13.1",
     "react-firebase": "^2.2.8",
     "react-hook-form": "^6.9.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "^3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -13,7 +13,7 @@ const Admin = () => {
         .then(data => setEventTask(data))
     },[])
     console.log(eventTask);
-    const handleDelete = (event, id) => {
+    const handleDelete = (id) => {
         fetch(`https://damp-springs-43419.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
@@ -50,7 +50,7 @@ const Admin = () => {
                         <p>{et.taskName}</p>
                     </div>
                     <div className="col-2">
-                        <button onClick={(event) => handleDelete(event,et._id)} className="btn btn-danger btn-sm"><DeleteForeverIcon></DeleteForeverIcon></button>
+                        <button onClick={() => handleDelete(et._id)} className="btn btn-danger btn-sm"><DeleteForeverIcon></DeleteForeverIcon></button>
                     </div>
                 </div>)
             }
